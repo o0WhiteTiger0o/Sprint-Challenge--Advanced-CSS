@@ -1,5 +1,5 @@
 // Mixins Here
-.display-nav-top() {
+.display() {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,5 +20,19 @@
     text-decoration: none;
     color: black;
 }
-@top-nav-background: lightgray;
+
+.button(@background, @color) {
+    background-color: @background;
+    color: @color;
+    .button-size(@h, @w){
+        height:@h;
+        width:@w;
+    }
+    &:hover {
+        background-color: @color;
+        color: @background;
+        cursor: pointer;
+        
+    }
+}
 
