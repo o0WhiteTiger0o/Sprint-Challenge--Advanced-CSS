@@ -145,20 +145,52 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+@media (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 5rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 h3 {
   font-size: 2.8rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 5rem;
+  }
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+@media (max-width: 500px) {
+  p {
+    font-size: 3rem;
+  }
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 170%;
+  }
 }
 .nav-top {
   background-color: lightgray;
@@ -168,6 +200,18 @@ p {
   justify-content: center;
   height: 10rem;
   font-size: 1.5rem;
+  width: auto;
+}
+@media (max-width: 500px) {
+  .nav-top {
+    width: 170%;
+  }
+  .nav-top nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 70%;
+  }
 }
 h1 {
   font-size: 4rem;
@@ -192,6 +236,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    width: 200%;
+  }
+}
+.home .intro .main-header {
+  border-radius: 10px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -202,6 +254,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -224,6 +285,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    width: 170%;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
