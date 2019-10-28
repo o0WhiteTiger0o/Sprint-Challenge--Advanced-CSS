@@ -10,8 +10,16 @@
   
 
   .intro {
+
+    @media @phone {
+      width: 90%;
+    }
     .main-header {
       border-radius: 10px;
+
+      @media @phone {
+        width: 103%;
+      }
     }
     
 
@@ -39,7 +47,7 @@
       }
 
       .blast {
-        width: 100%;
+        width: 85%;
       }
 
 
@@ -114,7 +122,7 @@
         .display();
         font-size: 2rem;
         @media @phone {
-          width: 120%;
+          width: 110%;
         }
 
         
@@ -129,6 +137,7 @@
       @media @phone {
         margin-left: 0;
         margin-bottom : 3%;
+        width: 55%;
       }
       
       img {

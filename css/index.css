@@ -181,6 +181,11 @@ p {
   justify-content: space-around;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .nav-top nav {
+    width: 80%;
+  }
+}
 h1 {
   font-size: 4rem;
   padding-bottom: 2rem;
@@ -215,8 +220,18 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .home .intro {
+    width: 90%;
+  }
+}
 .home .intro .main-header {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .intro .main-header {
+    width: 103%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -235,7 +250,7 @@ footer {
     display: none;
   }
   .home .space-images .blast {
-    width: 100%;
+    width: 85%;
   }
 }
 .home .space-images img {
@@ -297,7 +312,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 120%;
+    width: 110%;
   }
 }
 .home .walk .walk-img {
@@ -308,6 +323,7 @@ footer {
   .home .walk .walk-img {
     margin-left: 0;
     margin-bottom: 3%;
+    width: 55%;
   }
 }
 .home .walk .walk-img img {
