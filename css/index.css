@@ -230,7 +230,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro .main-header {
-    width: 103%;
+    width: 110%;
   }
 }
 .home .intro h2 {
