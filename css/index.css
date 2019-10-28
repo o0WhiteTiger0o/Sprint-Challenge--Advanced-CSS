@@ -145,52 +145,20 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
-@media (max-width: 500px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 5rem;
-  }
-}
 h2 {
   font-size: 3.2rem;
 }
-@media (max-width: 500px) {
-  h2 {
-    font-size: 5rem;
-  }
-}
 h3 {
   font-size: 2.8rem;
-}
-@media (max-width: 500px) {
-  h3 {
-    font-size: 5rem;
-  }
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-@media (max-width: 500px) {
-  p {
-    font-size: 3rem;
-  }
-}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-@media (max-width: 500px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 170%;
-  }
 }
 .nav-top {
   background-color: lightgray;
@@ -200,18 +168,18 @@ p {
   justify-content: center;
   height: 10rem;
   font-size: 1.5rem;
-  width: auto;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .nav-top {
-    width: 170%;
+    width: 100%;
   }
-  .nav-top nav {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    width: 70%;
-  }
+}
+.nav-top nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
 h1 {
   font-size: 4rem;
@@ -238,7 +206,13 @@ footer {
 }
 @media (max-width: 500px) {
   footer {
-    width: 200%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
   }
 }
 .home .intro .main-header {
@@ -288,7 +262,10 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
-    width: 170%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5%;
+    width: 160%;
   }
 }
 .home .walk .walk-text {
@@ -318,9 +295,20 @@ footer {
   color: #396362;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 120%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin-left: 0;
+    margin-bottom: 3%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
